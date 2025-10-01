@@ -1,9 +1,10 @@
-[gd_scene load_steps=8 format=3 uid="uid://cff5uacv07nea"]
+[gd_scene load_steps=9 format=3 uid="uid://cff5uacv07nea"]
 
 [ext_resource type="Shader" uid="uid://bythgufro1eht" path="res://clouds.gdshader" id="1"]
 [ext_resource type="CompressedTexture3D" uid="uid://c4dp6g6gouj2b" path="res://worlnoise.bmp" id="2"]
 [ext_resource type="CompressedTexture3D" uid="uid://dbfbysid168mx" path="res://perlworlnoise.tga" id="3"]
 [ext_resource type="Texture2D" uid="uid://dfkye0uf4i6w1" path="res://weather.bmp" id="4"]
+[ext_resource type="PackedScene" uid="uid://dkqqeded2ngia" path="res://box.tscn" id="5_fos0i"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jcxn0"]
 shader = ExtResource("1")
@@ -41,7 +42,10 @@ transform = Transform3D(1, 0.0003427, -0.00016891, -0.000342464, 0.999999, 0.001
 environment = SubResource("3")
 
 [node name="DirectionalLight3D" type="DirectionalLight3D" parent="."]
-transform = Transform3D(1, 0, 0, 0, -4.37114e-08, 1, 0, -1, -4.37114e-08, 0, 0, 0)
+transform = Transform3D(0.217837, 0.00126659, -0.975984, 0.975984, 0.0012865, 0.217838, 0.00153153, -0.999998, -0.000955923, 0.000116656, -0.000987135, 0.688636)
 
 [node name="Camera3D" type="Camera3D" parent="."]
 transform = Transform3D(0.106334, -0.534699, -0.838325, -0.00173144, 0.843005, -0.537904, 0.994329, 0.0586487, 0.0887139, 0, 0, 0)
+
+[node name="Node3D" parent="." instance=ExtResource("5_fos0i")]
+transform = Transform3D(1, -0.000342458, 0.000169401, 0.000342706, 0.999999, -0.00143346, -0.000168898, 0.00143352, 0.999999, -0.000169401, 0.00143346, -0.999999)
