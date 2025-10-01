@@ -4,7 +4,9 @@
 [ext_resource type="CompressedTexture3D" uid="uid://c4dp6g6gouj2b" path="res://worlnoise.bmp" id="2"]
 [ext_resource type="CompressedTexture3D" uid="uid://dbfbysid168mx" path="res://perlworlnoise.tga" id="3"]
 [ext_resource type="Texture2D" uid="uid://dfkye0uf4i6w1" path="res://weather.bmp" id="4"]
+=======
 [ext_resource type="PackedScene" uid="uid://dkqqeded2ngia" path="res://Scenes/box.tscn" id="5_fos0i"]
+>>>>>>> d6d87f7a15ea7125b402cce08f987e8d78e62747
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_jcxn0"]
 shader = ExtResource("1")
@@ -48,4 +50,4 @@ transform = Transform3D(-0.584137, 0.347377, -0.733562, 0.179575, 0.9367, 0.3005
 transform = Transform3D(0.106334, -0.534699, -0.838325, -0.00173144, 0.843005, -0.537904, 0.994329, 0.0586487, 0.0887139, 0, 0, 0)
 
 [node name="Node3D" parent="." instance=ExtResource("5_fos0i")]
-transform = Transform3D(1, -0.000342458, 0.000169401, 0.000342706, 0.999999, -0.00143346, -0.000168898, 0.00143352, 0.999999, -0.000169401, 0.00143346, -0.999999)
+transform = Transform3D(1, -0.000342458, 0.000169401, 0.000342706, 0.999999, -0.00143346, -0.000168898, 0.00143352, 0.999999, -0.655919, 0.00120873, -0.999888)
